@@ -3,11 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.7.34024.191
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PlaywrightBlazorSample.Server", "PlaywrightBlazorSample\Server\PlaywrightBlazorSample.Server.csproj", "{9257EB76-C9AE-4B3C-B7ED-96F9E3C8E884}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PlaywrightBlazorSample.Server", "PlaywrightBlazorSample\Server\PlaywrightBlazorSample.Server.csproj", "{9257EB76-C9AE-4B3C-B7ED-96F9E3C8E884}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PlaywrightBlazorSample.Client", "PlaywrightBlazorSample\Client\PlaywrightBlazorSample.Client.csproj", "{F61AD5A9-A81F-4D0F-A9C0-F99C6EDD2451}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PlaywrightBlazorSample.Client", "PlaywrightBlazorSample\Client\PlaywrightBlazorSample.Client.csproj", "{F61AD5A9-A81F-4D0F-A9C0-F99C6EDD2451}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PlaywrightBlazorSample.Shared", "PlaywrightBlazorSample\Shared\PlaywrightBlazorSample.Shared.csproj", "{02879BF1-41B1-4E39-8AB3-1ED00FEE2FF8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PlaywrightBlazorSample.Shared", "PlaywrightBlazorSample\Shared\PlaywrightBlazorSample.Shared.csproj", "{02879BF1-41B1-4E39-8AB3-1ED00FEE2FF8}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PlayWrightWithSpecFlow.Specs", "PlayWrightWithSpecFlow\PlayWrightWithSpecFlow.Specs.csproj", "{B8BD6CC7-45F3-4D4C-B7F3-0D3EED38C90F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
