@@ -21,14 +21,14 @@ namespace PlayWrightWithSpecFlow.Specs.Features
     [System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     [NUnit.Framework.TestFixtureAttribute()]
     [NUnit.Framework.DescriptionAttribute("Counter should be properly incrementing its value - 2")]
-    [NUnit.Framework.CategoryAttribute("Counter")]
+    [NUnit.Framework.CategoryAttribute("Counter2")]
     public partial class CounterShouldBeProperlyIncrementingItsValue_2Feature
     {
         
         private TechTalk.SpecFlow.ITestRunner testRunner;
         
         private string[] _featureTags = new string[] {
-                "Counter"};
+                "Counter2"};
         
 #line 1 "Counter2.feature"
 #line hidden
@@ -38,7 +38,7 @@ namespace PlayWrightWithSpecFlow.Specs.Features
         {
             testRunner = TechTalk.SpecFlow.TestRunnerManager.GetTestRunner();
             TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "Features", "Counter should be properly incrementing its value - 2", null, ProgrammingLanguage.CSharp, new string[] {
-                        "Counter"});
+                        "Counter2"});
             testRunner.OnFeatureStart(featureInfo);
         }
         

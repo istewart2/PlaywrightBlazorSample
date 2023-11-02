@@ -1,4 +1,4 @@
-﻿@Counter
+﻿@Counter2
 Feature: Counter should be properly incrementing its value - 2
 
 Scenario: Click increases the counter 2 - 2

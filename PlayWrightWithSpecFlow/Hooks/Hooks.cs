@@ -23,6 +23,21 @@ namespace AutomatedUITesting.Web.Tests.UI.Hooks
             container.RegisterInstanceAs(pageObject);
         }
 
+        [BeforeScenario("Counter2")]
+        public async Task BeforeCounter2Scenario(IObjectContainer container)
+        {
+            var playwright = await Playwright.CreateAsync();
+            var browser = await playwright.Chromium.LaunchAsync(new BrowserTypeLaunchOptions
+            {
+                Headless = true, // display in browser
+                //SlowMo = 2000 // add delay only to see playwright perform the actions
+            });
+            var pageObject = new CounterPageObject(browser);
+            container.RegisterInstanceAs(playwright);
+            container.RegisterInstanceAs(browser);
+            container.RegisterInstanceAs(pageObject);
+        }
+
         //[AfterScenario]
         //public async Task AfterScenario(IObjectContainer container)
         //{
