@@ -14,7 +14,7 @@ namespace AutomatedUITesting.Web.Tests.UI.Hooks
             var playwright = await Playwright.CreateAsync();
             var browser = await playwright.Chromium.LaunchAsync(new BrowserTypeLaunchOptions
             {
-                Headless = false, // display in browser
+                Headless = true, // display in browser
                 //SlowMo = 2000 // add delay only to see playwright perform the actions
             });
             var pageObject = new CounterPageObject(browser);
@@ -23,13 +23,13 @@ namespace AutomatedUITesting.Web.Tests.UI.Hooks
             container.RegisterInstanceAs(pageObject);
         }
 
-        [AfterScenario]
-        public async Task AfterScenario(IObjectContainer container)
-        {
-            var browser = container.Resolve<IBrowser>();
-            await browser.CloseAsync();
-            var playwright = container.Resolve<IPlaywright>();
-            playwright.Dispose();
-        }
+        //[AfterScenario]
+        //public async Task AfterScenario(IObjectContainer container)
+        //{
+        //    var browser = container.Resolve<IBrowser>();
+        //    await browser.CloseAsync();
+        //    var playwright = container.Resolve<IPlaywright>();
+        //    playwright.Dispose();
+        //}
     }
 }
